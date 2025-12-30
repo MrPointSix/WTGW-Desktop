@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class MenuManager : MonoBehaviour
 {
     public GameObject mainMenu;
+    public GameObject pullMenu;
     public GameObject gameScreen;
     public GameObject instructionMenu;
 
@@ -37,15 +38,15 @@ public class MenuManager : MonoBehaviour
         
     }
 
-    public void OpenInstructions()
+    public void OpenPullMenu()
     {
         audioManager.PlaySFX(audioManager.menuNav);
-        instructionMenu.SetActive(true);
+        pullMenu.SetActive(true);
     }
 
-    public void CloseInstructions()
+    public void ClosePullMenu()
     {
         audioManager.PlaySFX(audioManager.menuNav);
-        instructionMenu.SetActive(false);
+        pullMenu.SetActive(false);
     }
 }
